@@ -142,6 +142,29 @@ Se contribuye revisando y apoyando los PR's de otros participantes
 
 ## Write a simple GitHub Actions workflow file
 
-## Configure the workflow
+Se crea el directorio de `.github/workflows` y dentro se crea un archivo de tipo `.yml` donde estara el **github-action**
+```
+mkdir .github
+cd .github
+mkdir workflows
+cd workflows
+nano run-main.yml
+```
+
+Se agregan los campos necesarios para crear un action que ejecute el archivo `HelloWorld.java`
+> ![image](https://github.com/RichCardoso/lab-git-workflows/assets/129906460/fcc56da1-efad-4a22-85e5-edafb203e11f)
+
+Se sube el cambio en la rama develop que es donde esperamos se ejecute al crear un pull_request
+> ![image](https://github.com/RichCardoso/lab-git-workflows/assets/129906460/ba560aef-f215-428b-b970-966bdcf0c975)
+
+## Run the workflow
+
+Se genera un pull request a la ramam de **develop** y se comprueba la ejecucion de **github-action**
+> ![image](https://github.com/RichCardoso/lab-git-workflows/assets/129906460/30924d4b-7aa5-4c1c-a0f9-75fc5e708c3d)
+
+Se visualiza que los steps hayan corrido exitosamente en el pull request
+> ![image](https://github.com/RichCardoso/lab-git-workflows/assets/129906460/15f23768-69cf-491a-aded-1adb537d491f)
+
+
 
 
